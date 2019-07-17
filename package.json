@@ -1,0 +1,20 @@
+{
+  "name": "bigo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "bigo": "node eFiveToSix.js && npm run build && node forLoopParser.js && npm run clear",
+    "build": "babel es6 -d es5",
+    "build": "babel --presets es2015 es6 -d es5",
+    "clear": "rm -rf es6/main.js es5/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
