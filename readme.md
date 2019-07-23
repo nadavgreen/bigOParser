@@ -1,6 +1,6 @@
-#Big O
+# Big O
 
-###**TO SKIP THE EXPLAINATION JUST SCROLL TO THE HORIZONTAL LINE**
+### **TO SKIP THE EXPLAINATION JUST SCROLL TO THE HORIZONTAL LINE**
 
 Datastructures and Algorithms are some of the more interesting aspects of being a software engineer. Especially for those who love problem solving and mathematics. I've come to discover I love DSA because I was able to solve problems with my friends and share new solutions with them as I learn from them too!
 
