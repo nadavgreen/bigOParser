@@ -6,7 +6,7 @@ Datastructures and Algorithms are some of the more interesting aspects of being 
 
 I also understand for a lot of new engineers this topic can be a major turn off. When solving problems it's pretty intuitive for everyone to just loop and loop and loop and loop and - _you get the point_. But it **not as intuitive** to understand how to optimise your code.
 
-Big O notation -[_according to Wikipedia_](https://en.wikipedia.org/wiki/Big_O_notation)-  is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
+Big O notation - [_according to Wikipedia_](https://en.wikipedia.org/wiki/Big_O_notation) - is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity
 
 For us regular people that means as the length of your input grows the operations your function has to complete also increases (_depending on how it's implemented of course_).
 
@@ -51,12 +51,12 @@ For most people who are starting out, it isn't obvious what the Big O notation i
 
 
 ```
-**TO RUN:**
-- npm install **[FILL THIS IN]**
-- CD into ****
-- Write your function to index.js
-- Save the index.js
-- In the terminal run **_npm run bigo_**
+TO RUN:
+- npm install [FILL THIS IN]
+- CD into [FILL THIS IN]
+- Write your function to the main.js file
+- Save the main.js file
+- In the terminal run npm run bigo
 ```
 
 
