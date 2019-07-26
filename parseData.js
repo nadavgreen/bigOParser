@@ -1,18 +1,23 @@
-const dataParser = (func) => {
+const dataParser = (funcStr) => {
 	const funcObj = {
 		name: '',
-		
+		loops: [],	
 	};
-	funcObj['name'] = funcNameFinder(func)
-	console.log(func)
-	console.log(`The Big O notation of the function "${funcObj['name']}" is `)
+	funcObj['name'] = funcNameFinder(funcStr)
+	funcObj['loops'] = loopStack(funcStr)
+	console.log(funcStr)
+	console.log(funcObj['loops'])
+	//console.log(`The Big O notation of the function "${funcObj['name']}" is `)
 }
 
 const funcNameFinder = (arr) => {
 	let name = '';
 	for(let i = 0; i < arr.length; i++){
-		if(arr[i-1] === 'function') name = parenRemove(arr[i]);
-	}
+		if(arr[i] === 'function') {
+			name = parenRemove(arr[i+1]);
+			break;
+		};
+	};
 	return name;
 }
 
@@ -22,6 +27,28 @@ const parenRemove = (str) => {
 		newStr += str[i];
 	};
 	return newStr;
+}
+
+const loopStack = (arr) => {
+	let stack = [];
+	let forOp = false
+	let open = false
+	for(let i = 0; i < arr.length; i++){
+		if(arr[i] === 'for'){
+			stack.push(arr[i])
+			forOp = true
+		}
+		else if(arr[i] === '{' && forOp){ 
+			stack.push(arr[i])
+			forOp = false
+			open = true
+		}
+		else if((arr[i] === '}' || arr[i] === '};') && open) {
+			stack.push(arr[i])
+			open = false
+		}
+	};
+	return stack
 }
 
 module.exports = dataParser;
