@@ -24,7 +24,8 @@ const funcNameFinder = (arr) => {
 const parenRemove = (str) => {
 	let newStr = '';
 	for(let i = 0; i < str.length - 2; i++){
-		newStr += str[i];
+		if(str[i] !== '(') newStr += str[i];
+		else break;
 	};
 	return newStr;
 }
