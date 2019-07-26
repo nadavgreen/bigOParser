@@ -7,7 +7,7 @@
     "bigo": "node eFiveToSix.js && npm run build && node loopParser.js && npm run clear",
     "build": "babel es6 -d es5",
     "build": "babel --presets es2015 es6 -d es5",
-    "clear": "rm -rf es6/main.js es5/main.js",
+    "clear": "rm -rf es6/main.js es5/main.js main.js && touch main.js",
     "test": "exit 0"
   },
   "keywords": [],
