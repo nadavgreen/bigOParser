@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bigo": "node eFiveToSix.js && npm run build && node loopParser.js && npm run clear",
-    "build": "babel es6 -d es5",
+    "bigo": "node e6ToE5.js && npm run build && node functionToString.js && npm run clear",
     "build": "babel --presets es2015 es6 -d es5",
     "clear": "rm -rf es6/main.js es5/main.js",
     "test": "exit 0"

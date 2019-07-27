@@ -6,8 +6,8 @@ function myLoop() {
 		for(let j = 0; j < arr.length; j++){
 			sum += arr[j];
 		};
-		for(let k = 0; k < 5; k++){
-			sum += k
+		while(sum < 100){
+			sum += 1
 		};
 	};
 }
